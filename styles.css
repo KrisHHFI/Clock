@@ -32,3 +32,51 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.secondHandBase {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.secondHand {
+    height: 240px;
+    width: 10px;
+    background-color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    transform-origin: center bottom; /* The rotation base */
+    animation: rotateSecondHand 60s linear infinite; /* Rotate the second hand 360 degrees in 60 seconds */
+  }
+
+  .secondHandPointer {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 25px solid black;
+    position: absolute;
+    top: -25px; /* Position it at the top of the second hand */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%);
+    transform-origin: center bottom; /* Set the rotation base to the bottom center */
+}
+
+  @keyframes rotateSecondHand {
+    0% {
+        transform: translate(-50%, -100%) rotate(0deg); /* Start at 0 "12 o'clock" */
+    }
+    100% {
+        transform: translate(-50%, -100%) rotate(360deg); /* End at 360 degrees "12 o'clock" */
+    }
+}
