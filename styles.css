@@ -34,10 +34,26 @@ body {
     font-size: 30px;
 }
 
+.three {
+    position: absolute;
+    top: 45%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
 .six {
     position: absolute;
     top: 90%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.nine {
+    position: absolute;
+    top: 45%;
+    left: 4%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
