@@ -29,6 +29,15 @@ body {
     font-size: 30px;
 }
 
+.date {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    top: 75%;
+    left: 50%;
+    border: 3px solid #ffcb3d;
+}
+
 .twelve {
     top: 0;
     left: 50%;
