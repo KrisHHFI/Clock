@@ -34,6 +34,22 @@ body {
     font-size: 30px;
 }
 
+.one {
+    position: absolute;
+    top: 7%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.two {
+    position: absolute;
+    top: 25%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
 .three {
     position: absolute;
     top: 45%;
