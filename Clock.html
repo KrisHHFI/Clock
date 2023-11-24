@@ -29,13 +29,47 @@
                 </div>
             </div>
             <div class="minuteHandBase">
-                <div class="minuteHand">
+                <div class="minuteHand" id="minuteHand">
                     <div class="minuteHandPointer"></div>
                 </div>
             </div>
         </div>
     </div>
-    <p id="copyright">© 2023 Kristopher Pepper</p>
+
+    <script>
+        // Get the current local time
+        var localTime = new Date();
+
+        // Save the hours, minutes, and seconds to variables
+        var hours = localTime.getHours();
+        var minutes = localTime.getMinutes();
+        var seconds = localTime.getSeconds();
+
+        // Display the time (you can update your clock display here)
+        console.log("Current time: " + hours + ":" + minutes + ":" + seconds);
+
+        function setMinuteHand() {
+
+            // Calculate the rotation angle for the minute hand
+            var rotationAngle = (minutes / 60) * 360; // 60 minutes in an hour, 360 degrees in a circle
+
+            // Get the minute hand element
+            var minuteHand = document.getElementById('minuteHand');
+
+            // Apply the rotation to the minute hand
+            minuteHand.style.transform = `translate(-50%, -100%) rotate(${rotationAngle}deg)`;
+        }
+
+        // Call the function initially to set the minute hand
+        setMinuteHand();
+
+        // Update the minute hand every minute
+        setInterval(setMinuteHand, 60000); // Update every 60,000 milliseconds (1 minute)
+
+
+
+
+    </script>
 </body>
 
 </html>

@@ -206,12 +206,13 @@ body {
     transform: translateX(-50%);
     transform-origin: center bottom; /* Set the rotation base to the bottom center */
 }
-
+/*
   @keyframes rotateminuteHand {
     0% {
-        transform: translate(-50%, -100%) rotate(0deg); /* Start at 0 "12 o'clock" */
+        transform: translate(-50%, -100%) rotate(0deg);
     }
     100% {
-        transform: translate(-50%, -100%) rotate(360deg); /* End at 360 degrees "12 o'clock" */
+        transform: translate(-50%, -100%) rotate(360deg);
     }
 }
+*/
