@@ -58,6 +58,22 @@ body {
     font-size: 30px;
 }
 
+.four {
+    position: absolute;
+    top: 65%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.five {
+    position: absolute;
+    top: 83%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
 .six {
     position: absolute;
     top: 90%;
@@ -66,10 +82,42 @@ body {
     font-size: 30px;
 }
 
+.seven {
+    position: absolute;
+    top: 83%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.eight {
+    position: absolute;
+    top: 65%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
 .nine {
     position: absolute;
     top: 45%;
     left: 4%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.ten {
+    position: absolute;
+    top: 25%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.eleven {
+    position: absolute;
+    top: 7%;
+    left: 25%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
