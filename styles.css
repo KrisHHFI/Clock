@@ -207,7 +207,7 @@ body {
     transform-origin: center bottom; /* Set the rotation base to the bottom center */
 }
 /*
-  @keyframes rotateminuteHand {
+  @keyframes rotatehourHand {
     0% {
         transform: translate(-50%, -100%) rotate(0deg);
     }
