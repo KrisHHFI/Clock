@@ -36,16 +36,16 @@ body {
 
 .one {
     position: absolute;
-    top: 7%;
-    left: 75%;
+    top: 6%;
+    left: 72%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
 
 .two {
     position: absolute;
-    top: 25%;
-    left: 92%;
+    top: 21%;
+    left: 90%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
@@ -60,16 +60,16 @@ body {
 
 .four {
     position: absolute;
-    top: 65%;
-    left: 92%;
+    top: 68%;
+    left: 90%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
 
 .five {
     position: absolute;
-    top: 83%;
-    left: 75%;
+    top: 84%;
+    left: 73%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
@@ -84,16 +84,16 @@ body {
 
 .seven {
     position: absolute;
-    top: 83%;
-    left: 25%;
+    top: 84%;
+    left: 27%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
 
 .eight {
     position: absolute;
-    top: 65%;
-    left: 9%;
+    top: 68%;
+    left: 10%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
@@ -108,16 +108,16 @@ body {
 
 .ten {
     position: absolute;
-    top: 25%;
-    left: 9%;
+    top: 22%;
+    left: 10%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
 
 .eleven {
     position: absolute;
-    top: 7%;
-    left: 25%;
+    top: 6%;
+    left: 28%;
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
