@@ -1,5 +1,12 @@
 body {
-    margin: 0;
+    background-color: black;
+}
+
+.clockCentre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .case {
@@ -7,11 +14,6 @@ body {
     width: 600px;
     background-color: #ffcb3d;
     border-radius: 50%;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .face {
@@ -19,11 +21,6 @@ body {
     width: 550px;
     background-color: white;
     border-radius: 50%;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .number {
@@ -97,25 +94,13 @@ body {
     width: 25px;
     background-color: black;
     border-radius: 50%;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .minuteHand {
     height: 240px;
     width: 10px;
     background-color: black;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-
     transform-origin: center bottom;
-    /* The rotation base */
 }
 
 .minuteHandPointer {
@@ -126,28 +111,16 @@ body {
     border-bottom: 25px solid black;
     position: absolute;
     top: -25px;
-    /* Position it at the top of the second hand */
     left: 50%;
-    /* Center it horizontally */
     transform: translateX(-50%);
     transform-origin: center bottom;
-    /* Set the rotation base to the bottom center */
 }
 
 .hourHand {
     height: 150px;
     width: 16px;
     background-color: black;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-
     transform-origin: center bottom;
-    /* The rotation base */
-    animation: rotatehourHand 60s linear infinite;
-    /* Rotate the second hand 360 degrees in 60 seconds */
 }
 
 .hourHandPointer {
@@ -158,24 +131,14 @@ body {
     border-bottom: 25px solid black;
     position: absolute;
     top: -25px;
-    /* Position it at the top of the second hand */
     left: 50%;
-    /* Center it horizontally */
     transform: translateX(-50%);
     transform-origin: center bottom;
-    /* Set the rotation base to the bottom center */
 }
 
 .secondHand {
     height: 250px;
     width: 7px;
     background-color: black;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-
     transform-origin: center bottom;
-    /* The rotation base */
 }
