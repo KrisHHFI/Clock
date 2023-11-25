@@ -33,7 +33,7 @@ body {
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    top: 75%;
+    top: 82%;
     left: 50%;
     border: 3px solid #ffcb3d;
 }
@@ -106,40 +106,66 @@ body {
 }
 
 .minuteHand {
-    height: 240px;
-    width: 10px;
+    height: 40px;
+    width: 8px;
     background-color: black;
+    transform-origin: center bottom;
+}
+
+.minuteHandInvertedPointer {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 30px solid black;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
     transform-origin: center bottom;
 }
 
 .minuteHandPointer {
     width: 0;
     height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 25px solid black;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 215px solid black;
     position: absolute;
-    top: -25px;
+    top: -215px;
     left: 50%;
     transform: translateX(-50%);
     transform-origin: center bottom;
 }
 
 .hourHand {
-    height: 150px;
-    width: 16px;
+    height: 40px;
+    width: 8px;
     background-color: black;
+    transform-origin: center bottom;
+}
+
+.hourHandInvertedPointer {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 30px solid black;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
     transform-origin: center bottom;
 }
 
 .hourHandPointer {
     width: 0;
     height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 25px solid black;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 150px solid black;
     position: absolute;
-    top: -25px;
+    top: -150px;
     left: 50%;
     transform: translateX(-50%);
     transform-origin: center bottom;
