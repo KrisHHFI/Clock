@@ -9,11 +9,10 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.case {
-    height: 600px;
-    width: 600px;
-    background-color: #ffcb3d;
-    border-radius: 50%;
+.clockCaseImage {
+    height: 700px;
+    width: 700px;
+    clip-path: circle(312px at center);
 }
 
 .face {
