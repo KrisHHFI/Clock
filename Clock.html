@@ -42,6 +42,7 @@
                 </div>
             </div>
         </div>
+        <button type="button" onclick="sayHello()">Click Me!</button>
     </div>
 
     <script>
@@ -74,6 +75,10 @@
             hourHand.style.transform = `translate(-50%, -100%) rotate(${hourRotation}deg)`;
             minuteHand.style.transform = `translate(-50%, -100%) rotate(${minuteRotation}deg)`;
             secondHand.style.transform = `translate(-50%, -100%) rotate(${secondRotation}deg)`;
+        }
+
+        function sayHello() {
+            console.log("Hello, world!");
         }
 
         // Call the function initially to set the clock hands
