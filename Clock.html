@@ -53,6 +53,7 @@
 
             // Calculate the rotation angles
             var hourRotation = ((hours % 12) / 12) * 360; // 12 hours in a clock, 360 degrees in a circle
+            hourRotation += (minutes / 60) * 30; // 30 degrees per hour (360 degrees / 12 hours)
             var minuteRotation = (minutes / 60) * 360; // 60 minutes in an hour, 360 degrees in a circle
             var secondRotation = (seconds / 60) * 360; // 60 seconds in a minute, 360 degrees in a circle
 
