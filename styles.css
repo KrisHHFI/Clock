@@ -216,3 +216,9 @@ body {
     background-color: black;
     transform-origin: center bottom;
 }
+
+.secondHandGear {
+    height: 50px;
+    width: 50px;
+    background-color: grey; 
+  }
