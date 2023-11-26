@@ -15,10 +15,39 @@ body {
     clip-path: circle(312px at center);
 }
 
+.clockDateImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(
+            /* Outer top left */
+            calc(47% + 4px) calc(72% + 3px),
+            /* outer bottom left */
+            calc(47% + 4px) calc(77% - 3px),
+            /* Outer gap left */
+            calc(48% + 2px) calc(77% - 3px),
+            /* Inner top left*/
+            calc(48% + 2px) 73%,
+            /* Inner top right */
+            calc(52% - 2px) 73%,
+            /* Inner bottom right */
+            calc(52% - 2px) 76%,
+            /* Inner bottom left*/
+            calc(48% + 2px) 76%,
+            /* Outer gap right */
+            calc(48% + 2px) calc(77% - 3px),
+            /* outer bottom right */
+            calc(53% - 4px) calc(77% - 3px),
+            /* Outer Top right */
+            calc(53% - 4px) calc(72% + 3px));
+}
+
 .face {
     height: 550px;
     width: 550px;
     background-color: white;
+    background-color: #fffcf5;
     border-radius: 50%;
 }
 
@@ -34,7 +63,7 @@ body {
     font-size: 20px;
     top: 82%;
     left: 50%;
-    border: 3px solid #ffcb3d;
+    /* border: 3px solid #ffcb3d; */
 }
 
 .twelve {
