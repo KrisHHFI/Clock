@@ -224,7 +224,12 @@ body {
     border-radius: 50%
 }
 
-.secondHandGear1 {
+.secondHandGearImage {
     height: 120px;
     width: 120px;
+}
+
+.minuteHandGearImage {
+    height: 190px;
+    width: 190px;
 }
