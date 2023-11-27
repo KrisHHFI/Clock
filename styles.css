@@ -224,9 +224,23 @@ body {
     border-radius: 50%
 }
 
+.secondHandGear2 {
+    position: absolute;
+    top: 50%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+}
+
 .secondHandGearImage {
     height: 100px;
     width: 100px;
+}
+
+.secondHandGearImage2 {
+    height: 300px;
+    width: 300px;
+   
+   
 }
 
 .minuteHandGearImage {
