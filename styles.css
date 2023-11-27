@@ -221,36 +221,10 @@ body {
 .secondHandGear {
     width: 100px;
     height: 100px;
-    background: grey;
     border-radius: 50%
 }
 
-.secondHandGearNob {
+.secondHandGear1 {
     height: 120px;
-    width: 10px;
-    background-color: grey;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#gearNob2 {
-    transform: translate(-50%, -50%) rotate(30deg);
-}
-
-#gearNob3 {
-    transform: translate(-50%, -50%) rotate(60deg);
-}
-
-#gearNob4 {
-    transform: translate(-50%, -50%) rotate(90deg);
-}
-
-#gearNob5 {
-    transform: translate(-50%, -50%) rotate(120deg);
-}
-
-#gearNob6 {
-    transform: translate(-50%, -50%) rotate(150deg);
+    width: 120px;
 }
