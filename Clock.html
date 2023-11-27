@@ -25,11 +25,18 @@
                 <p class="number nine">9</p>
                 <p class="number ten">10</p>
                 <p class="number eleven">11</p>
+
+
+                <div class="hourHandGear clockCentre" id="hourHandGear">
+                    <img src="Images/hourHandGear1.svg" alt="hourHandGearImage"
+                        class="hourHandGearImage clockCentre">
+                </div>
+
+
                 <div class="minuteHandGear clockCentre" id="minuteHandGear">
                     <img src="Images/minuteHandGear1.svg" alt="minuteHandGearImage"
                         class="minuteHandGearImage clockCentre">
                 </div>
-
                 <div class="secondHandGear clockCentre" id="secondHandGear">
                     <img src="Images/secondHandGear1.svg" alt="secondHandGear" class="secondHandGearImage clockCentre">
                 </div>
@@ -76,7 +83,8 @@
             var minuteHand = document.getElementById('minuteHand');
             var secondHand = document.getElementById('secondHand');
             var secondHandGear = document.getElementById('secondHandGear');
-            var minuteHandGear = document.querySelector('.minuteHandGearImage'); // Use querySelector to select by class
+            var minuteHandGear = document.querySelector('.minuteHandGearImage');
+            var hourHandGear = document.getElementById('hourHandGear');
 
             // Apply the date to the date container
             dateContainer.innerHTML = date;
@@ -88,10 +96,11 @@
 
             // Rotate the gears
             secondHandGear.style.transform = `translate(-50%, -50%) rotate(${secondRotation}deg)`;
-            minuteHandGear.style.transform = `translate(-50%, -50%) rotate(${minuteRotation}deg)`; // Apply rotation to the minute hand gear
+            minuteHandGear.style.transform = `translate(-50%, -50%) rotate(${minuteRotation}deg)`;
+            hourHandGear.style.transform = `translate(-50%, -50%) rotate(${hourRotation}deg)`;
         }
 
-        var toggle = true;
+        var toggle = false;
 
         function clockInteriorToggle() {
             console.log("clockInteriorToggle");
@@ -103,11 +112,13 @@
                 clockFace.style.backgroundColor = '#fffcf5'; // Change the background color
                 secondHandGear.style.display = 'none';
                 minuteHandGear.style.display = 'none';
+                hourHandGear.style.display = 'none';
                 toggle = false;
             } else {
                 clockFace.style.backgroundColor = 'transparent'; // Set the background to transparent
                 secondHandGear.style.display = 'block';
                 minuteHandGear.style.display = 'block';
+                hourHandGear.style.display = 'block';
                 toggle = true;
             }
         }

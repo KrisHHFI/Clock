@@ -225,11 +225,16 @@ body {
 }
 
 .secondHandGearImage {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
 }
 
 .minuteHandGearImage {
-    height: 190px;
-    width: 190px;
+    height: 180px;
+    width: 180px;
+}
+
+.hourHandGearImage {
+    height: 275px;
+    width: 275px;
 }
