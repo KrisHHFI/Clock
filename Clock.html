@@ -25,14 +25,10 @@
                 <p class="number nine">9</p>
                 <p class="number ten">10</p>
                 <p class="number eleven">11</p>
-
-
                 <div class="hourHandGear clockCentre" id="hourHandGear">
                     <img src="Images/hourHandGear1.svg" alt="hourHandGearImage"
                         class="hourHandGearImage clockCentre">
                 </div>
-
-
                 <div class="minuteHandGear clockCentre" id="minuteHandGear">
                     <img src="Images/minuteHandGear1.svg" alt="minuteHandGearImage"
                         class="minuteHandGearImage clockCentre">
@@ -106,6 +102,7 @@
             console.log("clockInteriorToggle");
             var clockFace = document.querySelector('.face');
             var secondhandGear = document.querySelector('.secondHandGear');
+            var date = document.querySelector('.date');
             // Toggle the background color to transparent or a different color
 
             if (toggle === true) {
@@ -113,12 +110,15 @@
                 secondHandGear.style.display = 'none';
                 minuteHandGear.style.display = 'none';
                 hourHandGear.style.display = 'none';
+                date.style.display = 'block';
+                
                 toggle = false;
             } else {
                 clockFace.style.backgroundColor = 'transparent'; // Set the background to transparent
                 secondHandGear.style.display = 'block';
                 minuteHandGear.style.display = 'block';
                 hourHandGear.style.display = 'block';
+                date.style.display = 'none';
                 toggle = true;
             }
         }
