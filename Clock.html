@@ -26,7 +26,14 @@
                 <p class="number ten">10</p>
                 <p class="number eleven">11</p>
                 <img src="Clock Case.png" alt="Clock Case" class="clockDateImage clockCentre">
-                <div class="secondHandGear clockCentre" id="secondHandGear"></div>
+                <div class="secondHandGear clockCentre" id="secondHandGear">
+                    <div class="secondHandGearNob clockCentre" id="gearNob1"></div>
+                    <div class="secondHandGearNob clockCentre" id="gearNob2"></div>
+                    <div class="secondHandGearNob clockCentre" id="gearNob3"></div>
+                    <div class="secondHandGearNob clockCentre" id="gearNob4"></div>
+                    <div class="secondHandGearNob clockCentre" id="gearNob5"></div>
+                    <div class="secondHandGearNob clockCentre" id="gearNob6"></div>
+                </div>
                 <div class="date" id="date"></div>
                 <div class="handBase clockCentre">
                 </div>
@@ -82,17 +89,22 @@
             secondHandGear.style.transform = `translate(-50%, -50%) rotate(${secondRotation}deg)`;
         }
 
+        var toggle = false;
+
         function clockInteriorToggle() {
             console.log("clockInteriorToggle");
             var clockFace = document.querySelector('.face');
             var secondhandGear = document.querySelector('.secondHandGear');
             // Toggle the background color to transparent or a different color
-            if (clockFace.style.backgroundColor === 'transparent' || clockFace.style.backgroundColor === '') {
+            
+            if (toggle === true) {
                 clockFace.style.backgroundColor = '#fffcf5'; // Change the background color
                 secondHandGear.style.display = 'none'; // Hide the gear
+                toggle = false;
             } else {
                 clockFace.style.backgroundColor = 'transparent'; // Set the background to transparent
                 secondHandGear.style.display = 'block';
+                toggle = true;
             }
         }
         clockInteriorToggle();
