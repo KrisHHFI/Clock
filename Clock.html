@@ -109,6 +109,7 @@
             var secondhandGear = document.querySelector('.secondHandGear');
             var secondhandGear2 = document.querySelector('.secondHandGear2');
             var date = document.querySelector('.date');
+            var clockNumbers = document.querySelectorAll('.number');
 
             if (toggle === true) {
                 clockFace.style.backgroundColor = '#fffcf5';
@@ -117,6 +118,9 @@
                 minuteHandGear.style.display = 'none';
                 hourHandGear.style.display = 'none';
                 date.style.display = 'block';
+                clockNumbers.forEach(function (number) {
+                    number.style.display = 'block';
+                });
 
                 toggle = false;
             } else {
@@ -126,6 +130,10 @@
                 minuteHandGear.style.display = 'block';
                 hourHandGear.style.display = 'block';
                 date.style.display = 'none';
+                clockNumbers.forEach(function (number) {
+                    number.style.display = 'none';
+                });
+
                 toggle = true;
             }
         }
