@@ -25,17 +25,17 @@
                 <p class="number nine">9</p>
                 <p class="number ten">10</p>
                 <p class="number eleven">11</p>
-                <div class="hourHandGear clockCentre" id="hourHandGear">
+                <div class="hourHandGear gear clockCentre" id="hourHandGear">
                     <img src="Images/hourHandGear1.svg" alt="hourHandGearImage" class="hourHandGearImage clockCentre">
                 </div>
-                <div class="minuteHandGear clockCentre" id="minuteHandGear">
+                <div class="minuteHandGear gear clockCentre" id="minuteHandGear">
                     <img src="Images/minuteHandGear1.svg" alt="minuteHandGearImage"
                         class="minuteHandGearImage clockCentre">
                 </div>
-                <div class="secondHandGear clockCentre" id="secondHandGear">
+                <div class="secondHandGear gear clockCentre" id="secondHandGear">
                     <img src="Images/secondHandGear1.svg" alt="secondHandGear" class="secondHandGearImage clockCentre">
                 </div>
-                <div class="secondHandGear2" id="secondHandGear2">
+                <div class="secondHandGear2 gear" id="secondHandGear2">
                     <img src="Images/secondHandGear2.svg" alt="secondHandGear2" class="secondHandGearImage2">
                 </div>
 
@@ -106,32 +106,33 @@
         function clockInteriorToggle() {
             console.log("clockInteriorToggle");
             var clockFace = document.querySelector('.face');
-            var secondhandGear = document.querySelector('.secondHandGear');
-            var secondhandGear2 = document.querySelector('.secondHandGear2');
             var date = document.querySelector('.date');
             var clockNumbers = document.querySelectorAll('.number');
+            var gears = document.querySelectorAll('.gear');
 
             if (toggle === true) {
                 clockFace.style.backgroundColor = '#fffcf5';
-                secondHandGear.style.display = 'none';
-                secondHandGear2.style.display = 'none';
-                minuteHandGear.style.display = 'none';
-                hourHandGear.style.display = 'none';
                 date.style.display = 'block';
+
                 clockNumbers.forEach(function (number) {
                     number.style.display = 'block';
+                });
+
+                gears.forEach(function (gear) {
+                    gear.style.display = 'none';
                 });
 
                 toggle = false;
             } else {
                 clockFace.style.backgroundColor = 'transparent';
-                secondHandGear.style.display = 'block';
-                secondHandGear2.style.display = 'block';
-                minuteHandGear.style.display = 'block';
-                hourHandGear.style.display = 'block';
                 date.style.display = 'none';
+
                 clockNumbers.forEach(function (number) {
                     number.style.display = 'none';
+                });
+
+                gears.forEach(function (gear) {
+                    gear.style.display = 'block';
                 });
 
                 toggle = true;
