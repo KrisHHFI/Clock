@@ -227,7 +227,7 @@ body {
 .secondHandGear2 {
     position: absolute;
     top: 50%;
-    left: 66%;
+    left: 69%;
     transform: translate(-50%, -50%);
 }
 
@@ -237,10 +237,8 @@ body {
 }
 
 .secondHandGearImage2 {
-    height: 300px;
-    width: 300px;
-   
-   
+    height: 340px;
+    width: 340px;
 }
 
 .minuteHandGearImage {
