@@ -28,6 +28,9 @@
                 <div class="hourHandGear gear clockCentre" id="hourHandGear">
                     <img src="Images/hourHandGear1.svg" alt="hourHandGearImage" class="hourHandGearImage clockCentre">
                 </div>
+                <div class="signedGearContainerSmall gear" id="signedGearSmall">
+                    <img src="Images/signedGearSmall.svg" class="signedGearImageSmall">
+                </div>
                 <div class="signedGearContainer gear" id="signedGear">
                     <img src="Images/signedGear.svg" class="signedGearImage">
                 </div>
@@ -90,6 +93,7 @@
             var secondHandGear2 = document.getElementById('secondHandGear2');
             var signedGear = document.getElementById('signedGear');
             var signedGearBulkier = document.getElementById('signedGearBulkier');
+            var signedGearSmall = document.getElementById('signedGearSmall');
             var minuteHandGear = document.querySelector('.minuteHandGearImage');
             var hourHandGear = document.getElementById('hourHandGear');
 
@@ -107,10 +111,11 @@
             signedGear.style.transform = `translate(-50%, -50%) rotate(${secondRotation}deg)`;
             minuteHandGear.style.transform = `translate(-50%, -50%) rotate(${minuteRotation}deg)`;
             signedGearBulkier.style.transform = `translate(-50%, -50%) rotate(${-minuteRotation}deg)`;
+            signedGearSmall.style.transform = `translate(-50%, -50%) rotate(${-hourRotation}deg)`;
             hourHandGear.style.transform = `translate(-50%, -50%) rotate(${hourRotation}deg)`;
         }
 
-        var toggle = false;
+        var toggle = true;
 
         function clockInteriorToggle() {
             console.log("clockInteriorToggle");
