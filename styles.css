@@ -236,6 +236,18 @@ body {
     width: 100px;
 }
 
+.signedGearContainer {
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+}
+
+.signedGearImage {
+    height: 150px;
+    width: 150px;
+}
+
 .secondHandGearImage2 {
     height: 340px;
     width: 340px;
