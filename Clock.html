@@ -29,11 +29,14 @@
                     <img src="Images/hourHandGear1.svg" alt="hourHandGearImage" class="hourHandGearImage clockCentre">
                 </div>
                 <div class="signedGearContainer gear" id="signedGear">
-                    <img src="Images/signedGear.svg" alt="secondHandGear2" class="signedGearImage">
+                    <img src="Images/signedGear.svg" class="signedGearImage">
                 </div>
                 <div class="minuteHandGear gear clockCentre" id="minuteHandGear">
                     <img src="Images/minuteHandGear1.svg" alt="minuteHandGearImage"
                         class="minuteHandGearImage clockCentre">
+                </div>
+                <div class="signedGearBulkierContainer gear" id="signedGearBulkier">
+                    <img src="Images/signedGearBulkier.svg" class="signedGearBulkierImage">
                 </div>
                 <div class="secondHandGear gear clockCentre" id="secondHandGear">
                     <img src="Images/secondHandGear1.svg" alt="secondHandGear" class="secondHandGearImage clockCentre">
@@ -41,8 +44,6 @@
                 <div class="secondHandGear2 gear" id="secondHandGear2">
                     <img src="Images/secondHandGear2.svg" alt="secondHandGear2" class="secondHandGearImage2">
                 </div>
-                
-
                 <img src="Images/Clock Case.png" alt="Clock Case" class="clockDateImage clockCentre">
                 <div class="date" id="date"></div>
                 <div class="handBase clockCentre">
@@ -88,6 +89,7 @@
             var secondHandGear = document.getElementById('secondHandGear');
             var secondHandGear2 = document.getElementById('secondHandGear2');
             var signedGear = document.getElementById('signedGear');
+            var signedGearBulkier = document.getElementById('signedGearBulkier');
             var minuteHandGear = document.querySelector('.minuteHandGearImage');
             var hourHandGear = document.getElementById('hourHandGear');
 
@@ -104,6 +106,7 @@
             secondHandGear2.style.transform = `translate(-50%, -50%) rotate(${secondRotation}deg)`;
             signedGear.style.transform = `translate(-50%, -50%) rotate(${secondRotation}deg)`;
             minuteHandGear.style.transform = `translate(-50%, -50%) rotate(${minuteRotation}deg)`;
+            signedGearBulkier.style.transform = `translate(-50%, -50%) rotate(${-minuteRotation}deg)`;
             hourHandGear.style.transform = `translate(-50%, -50%) rotate(${hourRotation}deg)`;
         }
 

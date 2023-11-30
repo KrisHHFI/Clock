@@ -248,6 +248,18 @@ body {
     width: 150px;
 }
 
+.signedGearBulkierContainer {
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
+.signedGearBulkierImage {
+    height: 180px;
+    width: 180px;
+}
+
 .secondHandGearImage2 {
     height: 340px;
     width: 340px;
