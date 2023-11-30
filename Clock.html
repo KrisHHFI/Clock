@@ -74,7 +74,7 @@
             var hourRotation = ((hours % 12) / 12) * 360; // 12 hours in a clock, 360 degrees in a circle
             hourRotation += (minutes / 60) * 30; // 30 degrees per hour (360 degrees / 12 hours)
             var minuteRotation = (minutes / 60) * 360; // 60 minutes in an hour, 360 degrees in a circle
-            var secondRotation = (seconds / 60) * 360; // 60 seconds in a minute, 360 degrees in a circle
+            var secondRotation = ((seconds + localTime.getMilliseconds() / 1000) / 60) * 360;
 
             // Get the clock elements
             var dateContainer = document.getElementById('date');
@@ -144,7 +144,7 @@
         updateClock();
 
         // Update the clock hands every second
-        setInterval(updateClock, 1000); // Update every 1000 milliseconds (1 second)
+        setInterval(updateClock, 100); // Update every 100 milliseconds
     </script>
 </body>
 
