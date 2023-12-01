@@ -63,7 +63,7 @@ body {
     border-radius: 50%;
 }
 
-.number {
+.text {
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -77,6 +77,8 @@ body {
     left: 50%;
     /* border: 3px solid #ffcb3d; */
 }
+
+/* ------------ Text ------------*/
 
 .twelve {
     top: 0;
@@ -137,6 +139,18 @@ body {
     top: 6%;
     left: 28%;
 }
+
+.establishedtext {
+    top: 89%;
+    left: 50%;
+
+    height: 118px;
+  
+}
+
+
+
+
 
 .handBase {
     height: 25px;

@@ -13,18 +13,23 @@
         <div class="clock">
             <img src="Images/Clock Case.png" alt="Clock Case" class="clockCaseImage clockCentre">
             <div class="face clockCentre">
-                <p class="number twelve">12</p>
-                <p class="number one">1</p>
-                <p class="number two">2</p>
-                <p class="number three">3</p>
-                <p class="number four">4</p>
-                <p class="number five">5</p>
-                <p class="number six">6</p>
-                <p class="number seven">7</p>
-                <p class="number eight">8</p>
-                <p class="number nine">9</p>
-                <p class="number ten">10</p>
-                <p class="number eleven">11</p>
+                <p class="text twelve">12</p>
+                <p class="text one">1</p>
+                <p class="text two">2</p>
+                <p class="text three">3</p>
+                <p class="text four">4</p>
+                <p class="text five">5</p>
+                <p class="text six">6</p>
+                <p class="text seven">7</p>
+                <p class="text eight">8</p>
+                <p class="text nine">9</p>
+                <p class="text ten">10</p>
+                <p class="text eleven">11</p>
+
+
+                <img src="Images/establishedText.svg" class="establishedtext clockCentre text">
+
+
                 <div class="hourHandGear gear clockCentre" id="hourHandGear">
                     <img src="Images/hourHandGear1.svg" alt="hourHandGearImage" class="hourHandGearImage clockCentre">
                 </div>
@@ -121,15 +126,15 @@
             console.log("clockInteriorToggle");
             var clockFace = document.querySelector('.face');
             var date = document.querySelector('.date');
-            var clockNumbers = document.querySelectorAll('.number');
+            var text = document.querySelectorAll('.text');
             var gears = document.querySelectorAll('.gear');
 
             if (toggle === true) {
                 clockFace.style.backgroundColor = '#fffcf5';
                 date.style.display = 'block';
 
-                clockNumbers.forEach(function (number) {
-                    number.style.display = 'block';
+                text.forEach(function (text) {
+                    text.style.display = 'block';
                 });
 
                 gears.forEach(function (gear) {
@@ -141,8 +146,8 @@
                 clockFace.style.backgroundColor = 'transparent';
                 date.style.display = 'none';
 
-                clockNumbers.forEach(function (number) {
-                    number.style.display = 'none';
+                text.forEach(function (text) {
+                    text.style.display = 'none';
                 });
 
                 gears.forEach(function (gear) {
