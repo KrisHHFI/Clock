@@ -294,3 +294,29 @@ body {
     height: 275px;
     width: 275px;
 }
+
+.interiorButton {
+    position: absolute;
+    top: 87%;
+    left: 2%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none; 
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .interiorButton:hover {background-color: #fcbc19}
+  
+  .interiorButton:active {
+    background-color: #fcbc19;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
