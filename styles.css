@@ -6,6 +6,8 @@ body {
 .clock {
     position: relative;
     height: 700px;
+    width: 700px;
+    margin: auto;
 }
 
 .clockCentre {
@@ -28,7 +30,7 @@ body {
     border-radius: 50%;
 }
 
-.text {
+.text p {
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 30px;
