@@ -1,17 +1,11 @@
 body {
     background-color: black;
     margin: 0;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
 }
 
 .clock {
     position: relative;
-    width: 700px;
     height: 700px;
-    margin: auto;
 }
 
 .clockCentre {
@@ -25,34 +19,6 @@ body {
     height: 700px;
     width: 700px;
     clip-path: circle(312px at center);
-}
-
-.clockDateImage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    clip-path: polygon(
-            /* Outer top left */
-            calc(47% + 4px) calc(72% + 3px),
-            /* outer bottom left */
-            calc(47% + 4px) calc(77% - 3px),
-            /* Outer gap left */
-            calc(48% + 2px) calc(77% - 3px),
-            /* Inner top left*/
-            calc(48% + 2px) 73%,
-            /* Inner top right */
-            calc(52% - 2px) 73%,
-            /* Inner bottom right */
-            calc(52% - 2px) 76%,
-            /* Inner bottom left*/
-            calc(48% + 2px) 76%,
-            /* Outer gap right */
-            calc(48% + 2px) calc(77% - 3px),
-            /* outer bottom right */
-            calc(53% - 4px) calc(77% - 3px),
-            /* Outer Top right */
-            calc(53% - 4px) calc(72% + 3px));
 }
 
 .face {
@@ -74,7 +40,8 @@ body {
     font-size: 20px;
     top: 82%;
     left: 50%;
-    /* border: 3px solid #ffcb3d; */
+    border: 4px solid #b37922;
+    padding: 0px 8px 0px 8px;
 }
 
 /* ------------ Text ------------*/
