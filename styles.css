@@ -30,7 +30,7 @@ body {
     border-radius: 50%;
 }
 
-.text p {
+.alphanumerics p {
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -46,7 +46,7 @@ body {
     padding: 0px 8px 0px 8px;
 }
 
-/* ------------ Text ------------*/
+/* ------------ alphanumerics ------------*/
 
 .twelve {
     top: 0;
@@ -263,28 +263,6 @@ body {
     width: 275px;
 }
 
-.interiorButton {
-    position: absolute;
-    top: 87%;
-    left: 2%;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    padding: 10px 20px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none; 
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  .interiorButton:hover {background-color: #fcbc19}
-  
-  .interiorButton:active {
-    background-color: #fcbc19;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+.gear {
+    display: none;
+}

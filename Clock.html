@@ -11,8 +11,8 @@
 <body>
     <div class="clock">
         <img src="Images/Clock Case.png" alt="Clock case" class="clockCaseImage clockCentre">
-        <div class="face clockCentre">
-            <div id="text" class="text">
+        <div class="face clockCentre" onclick="clockInteriorToggle()">
+            <div id="alphanumerics" class="alphanumerics">
                 <p class="twelve">12</p>
                 <p class="one">1</p>
                 <p class="two">2</p>
@@ -26,29 +26,32 @@
                 <p class="ten">10</p>
                 <p class="eleven">11</p>
                 <img src="Images/signature.svg" alt="K.Pepper signature" class="signature clockCentre">
+                <div class="date" id="date"></div>
             </div>
-            <div class="hourHandGear gear clockCentre" id="hourHandGear">
-                <img src="Images/hourHandGear1.svg" alt="hourHandGearImage" class="hourHandGearImage clockCentre">
+            <div id="gear" class="gear">
+                <div class="hourHandGear clockCentre" id="hourHandGear">
+                    <img src="Images/hourHandGear1.svg" alt="hourHandGearImage" class="hourHandGearImage clockCentre">
+                </div>
+                <div class="signedGearContainerSmall" id="signedGearSmall">
+                    <img src="Images/signedGearSmall.svg" class="signedGearImageSmall">
+                </div>
+                <div class="signedGearContainer" id="signedGear">
+                    <img src="Images/signedGear.svg" class="signedGearImage">
+                </div>
+                <div class="minuteHandGear clockCentre" id="minuteHandGear">
+                    <img src="Images/minuteHandGear1.svg" alt="minuteHandGearImage"
+                        class="minuteHandGearImage clockCentre">
+                </div>
+                <div class="signedGearBulkierContainer" id="signedGearBulkier">
+                    <img src="Images/signedGearBulkier.svg" class="signedGearBulkierImage">
+                </div>
+                <div class="secondHandGear clockCentre" id="secondHandGear">
+                    <img src="Images/secondHandGear1.svg" alt="secondHandGear" class="secondHandGearImage clockCentre">
+                </div>
+                <div class="secondHandGear2" id="secondHandGear2">
+                    <img src="Images/secondHandGear2.svg" alt="secondHandGear2" class="secondHandGearImage2">
+                </div>
             </div>
-            <div class="signedGearContainerSmall gear" id="signedGearSmall">
-                <img src="Images/signedGearSmall.svg" class="signedGearImageSmall">
-            </div>
-            <div class="signedGearContainer gear" id="signedGear">
-                <img src="Images/signedGear.svg" class="signedGearImage">
-            </div>
-            <div class="minuteHandGear gear clockCentre" id="minuteHandGear">
-                <img src="Images/minuteHandGear1.svg" alt="minuteHandGearImage" class="minuteHandGearImage clockCentre">
-            </div>
-            <div class="signedGearBulkierContainer gear" id="signedGearBulkier">
-                <img src="Images/signedGearBulkier.svg" class="signedGearBulkierImage">
-            </div>
-            <div class="secondHandGear gear clockCentre" id="secondHandGear">
-                <img src="Images/secondHandGear1.svg" alt="secondHandGear" class="secondHandGearImage clockCentre">
-            </div>
-            <div class="secondHandGear2 gear" id="secondHandGear2">
-                <img src="Images/secondHandGear2.svg" alt="secondHandGear2" class="secondHandGearImage2">
-            </div>
-            <div class="date" id="date"></div>
             <div class="handBase clockCentre">
             </div>
             <div class="hourHand clockCentre" id="hourHand">
@@ -64,7 +67,6 @@
             </div>
         </div>
     </div>
-    <button type="button" class="interiorButton" onclick="clockInteriorToggle()">Clock Interior</button>
 
     <script>
         function updateClock() {
@@ -120,15 +122,15 @@
             console.log("clockInteriorToggle");
             var clockFace = document.querySelector('.face');
             var date = document.querySelector('.date');
-            var text = document.querySelectorAll('.text');
+            var alphanumerics = document.querySelectorAll('.alphanumerics');
             var gears = document.querySelectorAll('.gear');
 
             if (toggle === true) {
                 clockFace.style.backgroundColor = '#fffcf5';
                 date.style.display = 'block';
 
-                text.forEach(function (text) {
-                    text.style.display = 'block';
+                alphanumerics.forEach(function (alphanumeric) {
+                    alphanumeric.style.display = 'block';
                 });
 
                 gears.forEach(function (gear) {
@@ -140,8 +142,8 @@
                 clockFace.style.backgroundColor = 'transparent';
                 date.style.display = 'none';
 
-                text.forEach(function (text) {
-                    text.style.display = 'none';
+                alphanumerics.forEach(function (alphanumeric) {
+                    alphanumeric.style.display = 'none';
                 });
 
                 gears.forEach(function (gear) {
