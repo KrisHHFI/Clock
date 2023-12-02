@@ -1,3 +1,5 @@
+const full_Turn = 360;
+
 function updateClock() {
     const localTime = new Date();
 
@@ -8,10 +10,10 @@ function updateClock() {
     const seconds = localTime.getSeconds();
 
     // Calculate the rotation angles
-    let hourRotation = ((hours % 12) / 12) * 360; // 12 hours in a clock, 360 degrees in a circle
+    let hourRotation = ((hours % 12) / 12) * full_Turn; // 12 hours in a clock, 360 degrees in a circle
     hourRotation += (minutes / 60) * 30; // 30 degrees per hour (360 degrees / 12 hours)
-    const minuteRotation = (minutes / 60) * 360; // 60 minutes in an hour, 360 degrees in a circle
-    const secondRotation = ((seconds + localTime.getMilliseconds() / 1000) / 60) * 360;
+    const minuteRotation = (minutes / 60) * full_Turn; // 60 minutes in an hour, 360 degrees in a circle
+    const secondRotation = ((seconds + localTime.getMilliseconds() / 1000) / 60) * full_Turn;
 
     // Get the clock elements
     const dateContainer = document.getElementById('date');
@@ -77,8 +79,11 @@ function clockInteriorToggle() {
         toggle = true;
     }
 }
-clockInteriorToggle();
 
-updateClock();
+function initializeClock() {
+    clockInteriorToggle();
+    updateClock();
+    setInterval(updateClock, 100); // Update every 100 milliseconds
+}
 
-setInterval(updateClock, 100); // Update every 100 milliseconds
+document.addEventListener("DOMContentLoaded", initializeClock);
