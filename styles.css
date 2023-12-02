@@ -30,6 +30,8 @@ body {
     border-radius: 50%;
 }
 
+/* ------------ alphanumerics ------------*/
+
 .alphanumerics p {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -45,8 +47,6 @@ body {
     border: 4px solid #b37922;
     padding: 0px 8px 0px 8px;
 }
-
-/* ------------ alphanumerics ------------*/
 
 .twelve {
     top: 0;
@@ -113,6 +113,8 @@ body {
     left: 50%;
     height: 118px;
 }
+
+/* Hands */
 
 .handBase {
     height: 25px;
@@ -193,6 +195,8 @@ body {
     background-color: black;
     transform-origin: center bottom;
 }
+
+/* Gears */
 
 .secondHandGear {
     width: 100px;
