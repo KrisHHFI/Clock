@@ -29,27 +29,13 @@
                 <div class="date" id="date"></div>
             </div>
             <div id="gears" class="gears">
-                <div class="clockCentre" id="hourHandGear">
-                    <img src="Images/hourHandGear1.svg" class="hourHandGearImage">
-                </div>
-                <div class="signedGearContainerSmall" id="signedGearSmall">
-                    <img src="Images/signedGearSmall.svg" class="signedGearImageSmall">
-                </div>
-                <div class="signedGearContainer" id="signedGear">
-                    <img src="Images/signedGear.svg" class="signedGearImage">
-                </div>
-                <div class="clockCentre" id="minuteHandGear">
-                    <img src="Images/minuteHandGear1.svg" class="minuteHandGearImage clockCentre">
-                </div>
-                <div class="signedGearBulkierContainer" id="signedGearBulkier">
-                    <img src="Images/signedGearBulkier.svg" class="signedGearBulkierImage">
-                </div>
-                <div class="clockCentre" id="secondHandGear">
-                    <img src="Images/secondHandGear1.svg" class="secondHandGearImage">
-                </div>
-                <div class="secondHandGear2" id="secondHandGear2">
-                    <img src="Images/secondHandGear2.svg" class="secondHandGearImage2">
-                </div>
+                <img src="Images/hourHandGear1.svg" class="hourHandGearImage clockCentre" id="hourHandGear">
+                <img src="Images/signedGearSmall.svg" class="signedGearImageSmall" id="signedGearSmall">
+                <img src="Images/signedGear.svg" class="signedGearImage" id="signedGear">
+                <img src="Images/minuteHandGear1.svg" class="minuteHandGearImage clockCentre" id="minuteHandGear">
+                <img src="Images/signedGearBulkier.svg" class="signedGearBulkierImage" id="signedGearBulkier">
+                <img src="Images/secondHandGear1.svg" class="secondHandGearImage clockCentre" id="secondHandGear">
+                <img src="Images/secondHandGear2.svg" class="secondHandGearImage2" id="secondHandGear2">
             </div>
             <div id="hands" class="clockCentre">
                 <div class="handBase"></div>
@@ -115,7 +101,7 @@
             hourHandGear.style.transform = `translate(-50%, -50%) rotate(${hourRotation}deg)`;
         }
 
-        var toggle = true;
+        var toggle = false;
 
         function clockInteriorToggle() {
             var clockFace = document.querySelector('.face');

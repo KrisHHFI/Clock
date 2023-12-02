@@ -200,55 +200,43 @@ body {
     border-radius: 50%
 }
 
-.secondHandGear2 {
-    position: absolute;
-    top: 50%;
-    left: 69%;
-    transform: translate(-50%, -50%);
-}
-
 .secondHandGearImage {
     height: 100px;
     width: 100px;
 }
 
-.signedGearContainer {
+.signedGearImage {
     position: absolute;
     top: 50%;
     left: 83%;
     transform: translate(-50%, -50%);
-}
-
-.signedGearImage {
     height: 150px;
     width: 150px;
 }
 
-.signedGearBulkierContainer {
+.signedGearBulkierImage {
+    height: 180px;
+    width: 180px;
     position: absolute;
     top: 28%;
     left: 28%;
     transform: translate(-50%, -50%);
 }
 
-.signedGearBulkierImage {
-    height: 180px;
-    width: 180px;
-}
-
-.signedGearContainerSmall {
+.signedGearImageSmall {
+    height: 100px;
+    width: 100px;
     position: absolute;
     top: 72%;
     left: 27%;
     transform: translate(-50%, -50%);
 }
 
-.signedGearImageSmall {
-    height: 100px;
-    width: 100px;
-}
-
 .secondHandGearImage2 {
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    transform: translate(-50%, -50%);
     height: 340px;
     width: 340px;
 }
