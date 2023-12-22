@@ -1,7 +1,7 @@
 # Clock
 
 <img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/312758f6-ecd8-461f-aca1-ff917dc5d0d4/clock+1.png" height="300"/>
-<img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/9889b930-67ae-461e-9307-92a01b453847/Sequence+%231%283%29+%281%29.gif" height="400"/>
+<img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/b89cb24a-2269-4d12-9af6-84479480657f/Sequence+%231%284%29.gif" height="400"/>
 
 
 
