@@ -1,7 +1,9 @@
 # Clock
 
 <img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/312758f6-ecd8-461f-aca1-ff917dc5d0d4/clock+1.png" height="300"/>
-<img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/28e44a2b-e75c-46d2-a787-f35a0697db6b/clock+2.png" height="300"/>
+<img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/9889b930-67ae-461e-9307-92a01b453847/Sequence+%231%283%29+%281%29.gif" height="400"/>
+
+
 
 Check out the [demo video](https://youtu.be/QdmSNsHW1Wg).
 
